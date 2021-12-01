@@ -38,12 +38,15 @@ class ContentPage extends StatelessWidget {
 
     return Scaffold(
       appBar: CustomAppBar(
-        context: context,
+         context: context,
+    
         controller: controller,
         picUrl: 'https://uifaces.co/our-content/donated/gPZwCbdS.jpg',
-        tile: const Text("Red Egresados"),
+        tile: const Text("Vault Anime"),
+        
         onSignOff: () {
-          authController.manager.signOut();
+        authController.manager.signOut();
+       
         },
       ),
       body: SafeArea(
@@ -60,7 +63,7 @@ class ContentPage extends StatelessWidget {
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.lightbulb_outline_rounded,
+                  Icons.home,
                   key: Key("statesSection"),
                 ),
                 label: 'Estados',

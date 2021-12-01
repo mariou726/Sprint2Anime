@@ -18,7 +18,7 @@ class CustomAppBar extends AppBar {
       required this.picUrl,
       required this.tile,
       required this.onSignOff,
-      this.home = true})
+      this.home = true, backgroundcolor})
       : super(
           key: key,
           centerTitle: true,
